@@ -84,7 +84,7 @@ function App() {
           <div className="text-center mb-10">
             <h3 className="text-3xl font-black">{active.name}</h3>
             <p className="text-gray-300 mt-2">{active.subtitle}</p>
-            <span className="inline-block mt-3 text-xs font-bold uppercase px-3 py-1 rounded-full bg-gray-800 text-gray-300">Zestaw 3-stopniowy · 3 produkty w zestawie</span>
+            <span className="inline-block mt-3 text-xs font-bold uppercase px-3 py-1 rounded-full bg-gray-800 text-gray-300">3 produkty w zestawie</span>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-10">
