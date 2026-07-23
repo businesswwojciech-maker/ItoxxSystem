@@ -97,7 +97,7 @@ function App() {
             {active.steps.map((p) => (
               <div key={p.step} className="bg-black rounded-xl p-6 border border-gray-800 flex flex-col items-center text-center">
                 <div className={`w-40 h-56 mb-4 rounded-lg bg-gray-900 flex items-center justify-center border border-gray-700`}>
-                  <img src={p.img || "https://placehold.co/160x220?text=ITOXX"} alt={p.name} className="w-full h-full object-cover rounded-lg opacity-90" />
+                  <img src="https://placehold.co/160x220?text=ITOXX" alt={p.name} className="rounded-lg opacity-90" />
                 </div>
                 <span className={`text-xs font-bold uppercase mb-2 ${active.textAccent}`}>Krok {p.step}</span>
                 <h4 className="font-bold text-lg mb-1">{p.name}</h4>
