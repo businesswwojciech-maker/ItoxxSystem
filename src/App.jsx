@@ -1,4 +1,10 @@
 import { useState } from 'react';
+import cashmere1 from './assets/cashmere 1.png';
+import cashmere2 from './assets/cashmere 2.png';
+import cashmere3 from './assets/cashmere 3.png';
+import gold1 from './assets/gold 1.png';
+import gold2 from './assets/gold 2.png';
+import gold3 from './assets/gold 3.png';
 
 function App() {
   const [selectedLine, setSelectedLine] = useState('nano');
@@ -15,9 +21,9 @@ function App() {
       textAccent: "text-[#C8A34F]",
       packPrice: 299,
       steps: [
-        { step: 1, name: "Szampon wypełniający", size: "1000ML" },
-        { step: 2, name: "Maska wypełniająca", size: "1000ML" },
-        { step: 3, name: "Fluid wypełniający", size: "250ML" },
+        { step: 1, name: "Szampon wypełniający", size: "1000ML", img: cashmere1 },
+        { step: 2, name: "Maska wypełniająca", size: "1000ML", img: cashmere2 },
+        { step: 3, name: "Fluid wypełniający", size: "250ML", img: cashmere3 },
       ]
     },
     stage: {
@@ -28,9 +34,9 @@ function App() {
       textAccent: "text-pink-600",
       packPrice: 299,
       steps: [
-        { step: 1, name: "Szampon Nano Gold BTX", size: "1000ML" },
-        { step: 2, name: "Maska Nano Gold BTX", size: "1000ML" },
-        { step: 3, name: "Fluid Nano Gold BTX", size: "200ML" },
+        { step: 1, name: "Szampon Nano Gold BTX", size: "1000ML", img: gold1 },
+        { step: 2, name: "Maska Nano Gold BTX", size: "1000ML", img: gold2 },
+        { step: 3, name: "Fluid Nano Gold BTX", size: "200ML", img: gold3 },
       ]
     }
   };
@@ -91,7 +97,7 @@ function App() {
             {active.steps.map((p) => (
               <div key={p.step} className="bg-black rounded-xl p-6 border border-gray-800 flex flex-col items-center text-center">
                 <div className={`w-40 h-56 mb-4 rounded-lg bg-gray-900 flex items-center justify-center border border-gray-700`}>
-                  <img src="https://placehold.co/160x220?text=ITOXX" alt={p.name} className="rounded-lg opacity-90" />
+                  <img src={p.img || "https://placehold.co/160x220?text=ITOXX"} alt={p.name} className="w-full h-full object-cover rounded-lg opacity-90" />
                 </div>
                 <span className={`text-xs font-bold uppercase mb-2 ${active.textAccent}`}>Krok {p.step}</span>
                 <h4 className="font-bold text-lg mb-1">{p.name}</h4>
