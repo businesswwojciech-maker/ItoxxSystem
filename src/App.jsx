@@ -63,14 +63,14 @@ function App() {
       </div>
 
       {/* Hero */}
-      <section className="relative py-20 px-4 text-center bg-gradient-to-b from-gray-900 to-black">
+      <section className="relative pt-20 pb-6 px-4 text-center bg-gradient-to-b from-gray-900 to-black">
         <p className={`${active.textAccent} uppercase tracking-widest text-sm mb-3`}>Made in Italy · Użycie profesjonalne</p>
         <h1 className="text-4xl md:text-6xl font-black mb-4">PROFESJONALNE SYSTEMY<br/>DO WŁOSÓW</h1>
-        <p className="text-gray-400 max-w-xl mx-auto">Znane z TikToka. Zabiegi wypełniające na bazie nanotechnologii i kwasu hialuronowego — salonowe efekty w domu.</p>
+        
       </section>
 
       {/* Product Line Selector */}
-      <section id="produkty" className="max-w-6xl mx-auto px-4 py-4">
+      <section id="produkty" className="max-w-6xl mx-auto px-4 pt-0 pb-4">
         <h2 className="text-3xl font-black text-center mb-8">Wybierz swój system</h2>
         <div className="flex justify-center gap-4 mb-12">
           {Object.keys(products).map((key) => (
