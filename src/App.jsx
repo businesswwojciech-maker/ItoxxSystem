@@ -21,7 +21,7 @@ function App() {
       ]
     },
     stage: {
-      name: "STAGE 2 NANO GOLD BTX",
+      name: "NANO GOLD BTX",
       subtitle: "Z kwasem hialuronowym, olejem z pestek moreli i hydrolizowaną keratyną",
       color: "from-pink-500 to-purple-600",
       accent: "bg-pink-600",
@@ -172,7 +172,7 @@ function App() {
 
             {/* Stage 2 Nano Gold BTX */}
             <div className="bg-black rounded-2xl border border-gray-800 p-6">
-              <h3 className="text-2xl font-black mb-1">STAGE 2 NANO GOLD BTX</h3>
+              <h3 className="text-2xl font-black mb-1">NANO GOLD BTX</h3>
               <p className="text-pink-500 text-xs uppercase tracking-wide mb-4">Kwas hialuronowy · Olej z pestek moreli · Hydrolizowana keratyna</p>
               <div className="space-y-4 text-sm text-gray-300">
                 <div>
