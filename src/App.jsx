@@ -10,7 +10,7 @@ function App() {
   const [selectedLine, setSelectedLine] = useState('nano');
 
   const PHONE_NUMBER = "xxx-xxx-xxx";
-  const GOOGLE_FORM_URL = "https://forms.gle/placeholder";
+  const GOOGLE_FORM_URL = "https://forms.gle/Bdtp2H6Emy5EysG79";
 
   const products = {
     nano: {
@@ -97,7 +97,7 @@ function App() {
             {active.steps.map((p) => (
               <div key={p.step} className="bg-black rounded-xl p-6 border border-gray-800 flex flex-col items-center text-center">
                 <div className={`w-40 h-56 mb-4 rounded-lg bg-gray-900 flex items-center justify-center border border-gray-700`}>
-                  <img src="https://placehold.co/160x220?text=ITOXX" alt={p.name} className="rounded-lg opacity-90" />
+                  <img src={p.img || "https://placehold.co/160x220?text=ITOXX"} alt={p.name} className="w-full h-full object-cover rounded-lg opacity-90" />
                 </div>
                 <span className={`text-xs font-bold uppercase mb-2 ${active.textAccent}`}>Krok {p.step}</span>
                 <h4 className="font-bold text-lg mb-1">{p.name}</h4>
@@ -110,16 +110,10 @@ function App() {
             <p className="text-3xl font-black mb-4">{active.packPrice} zł <span className="text-sm text-gray-400 font-normal">/ zestaw 3 produktów</span></p>
             <div className="flex flex-col gap-3">
               <a
-                href={`tel:${PHONE_NUMBER}`}
-                className={`w-full px-8 py-3 rounded-full font-bold uppercase text-black ${active.accent}`}
-              >
-                📞 Zadzwoń teraz: {PHONE_NUMBER}
-              </a>
-              <a
                 href={GOOGLE_FORM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full px-8 py-3 rounded-full font-bold uppercase border-2 border-white text-white"
+                className={`w-full px-8 py-3 rounded-full font-bold uppercase text-black ${active.accent}`}
               >
                 Zamów przez formularz
               </a>
