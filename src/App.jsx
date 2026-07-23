@@ -129,15 +129,19 @@ function App() {
           <h2 className="text-3xl font-black mb-2">Zobacz nas na TikToku</h2>
           <p className="text-gray-400 mb-10">Prawdziwe efekty, prawdziwi klienci — jak widziane na TikToku.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="w-48 aspect-[9/16] bg-black rounded-xl border border-gray-800 flex flex-col items-center justify-center text-gray-500 hover:border-yellow-500 transition overflow-hidden">
-                <video
-                  className="w-full h-full object-cover"
-                  controls
-                  poster="https://placehold.co/270x480?text=TikTok+Video"
-                >
-                  {/* Wgraj tu plik wideo z TikToka */}
-                </video>
+            {[
+              "7665683830354890006",
+              "7665668688921513238",
+              "7665683200311725314",
+            ].map((videoId) => (
+              <div key={videoId} className="w-[280px] aspect-[9/16] bg-black rounded-xl border border-gray-800 overflow-hidden">
+                <iframe
+                  src={`https://www.tiktok.com/embed/v2/${videoId}`}
+                  className="w-full h-full"
+                  allow="encrypted-media;"
+                  allowFullScreen
+                  title={`TikTok video ${videoId}`}
+                ></iframe>
               </div>
             ))}
           </div>
