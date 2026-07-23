@@ -23,7 +23,7 @@ function App() {
       steps: [
         { step: 1, name: "Szampon wypełniający", size: "1000ML", img: cashmere1 },
         { step: 2, name: "Maska wypełniająca", size: "1000ML", img: cashmere2 },
-        { step: 3, name: "Fluid wypełniający", size: "250ML", img: cashmere3 },
+        { step: 3, name: "Fluid wypełniający", size: "200ML", img: cashmere3 },
       ]
     },
     stage: {
